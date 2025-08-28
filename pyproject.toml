@@ -1,0 +1,53 @@
+[project]
+name = "m365-mailer"
+version = "0.1.0"
+description = "A simple script to send emails with Microsoft's Graph API."
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "i-cant-computer" },
+]
+dependencies = [
+    "pid",
+    "msal",
+]
+
+[project.urls]
+Homepage = "https://github.com/i-cant-computer/m365-mailer"
+
+[tool.docformatter]
+
+recursive = true
+wrap-summaries = 88
+wrap-descriptions = 88
+
+[tool.ruff]
+
+line-length = 88
+indent-width = 2
+exclude = []
+
+[tool.ruff.format]
+
+docstring-code-format = true
+line-ending = "lf"
+
+[tool.ruff.lint]
+
+select = ["ALL"]
+ignore = [
+    "COM812",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D203",
+    "D213",
+    "E501",
+    "ERA001",
+    "F401",
+    "ISC001",
+    "INP001",
+    "RET504",
+    "T201",
+]
